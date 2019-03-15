@@ -1,6 +1,6 @@
 [![Gitter chat](https://img.shields.io/badge/gitter-join%20chat-brightgreen.svg)](https://gitter.im/CiscoSecurity/AMP-for-Endpoints "Gitter chat")
 
-### AMP for Endpoints Event Stream Creator:
+### AMP for Endpoints Delete Event Stream:
 
 Script for deleting an event stream using the /v1/event_streams/{:id} endpoint documented [here](https://api-docs.amp.cisco.com/api_actions/details?api_action=DELETE+%2Fv1%2Fevent_streams%2F%7B%3Aid%7D&api_host=api.amp.cisco.com&api_resource=EventStream&api_version=v1). This script will automatically determine which AMP clound to delete the event stream from on based on the credentials. 
 
@@ -10,7 +10,7 @@ Script for deleting an event stream using the /v1/event_streams/{:id} endpoint d
 
 ### Usage:
 ```
-python create_event_stream.py
+python delete_event_stream.py
 ```
 
 ### Example script output:  
