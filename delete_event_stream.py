@@ -63,11 +63,11 @@ def ask_for_stream_id(valid_ids):
 
 def confirm_continue():
     '''Ask the user if they want to continue
-       Keep asking until they enter 'y', 'Y', 'n', or 'N'
+       Keep asking until the input starts with  'y', 'Y', 'n', or 'N'
     '''
     while True:
-        reply = str(input('Are you sure you want to continue?'+' (y/n): ')).lower().strip()
-        if reply[:1] == 'y':
+        reply = str(input('Are you sure you want to continue? (y/n): ')).lower().strip()
+        if reply[:1] == 'y': # using [:1] instead of [0] prevents indexing error if the answer is empty
             return True
         if reply[:1] == 'n':
             return False
