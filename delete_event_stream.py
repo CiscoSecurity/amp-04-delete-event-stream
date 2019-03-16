@@ -67,7 +67,7 @@ def confirm_continue():
     '''
     while True:
         reply = str(input('Are you sure you want to continue? (y/n): ')).lower().strip()
-        if reply[:1] == 'y': # using [:1] instead of [0] prevents indexing error if the answer is empty
+        if reply[:1] == 'y': # using [:1] instead of [0] prevents IndexError if the reply is empty
             return True
         if reply[:1] == 'n':
             return False
